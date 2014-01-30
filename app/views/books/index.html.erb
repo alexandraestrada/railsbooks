@@ -1,2 +1,7 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<h1>List of our Books</h1>
+<p id="notice"> <%= notice %> </p>
+<% @books.each do |b| %>
+	<div> Book Title: <%= b.title %>, Written By: <%= b.author %>, Publication Date:<%= b.publication %>, ISBN: <%= b.ISBN %>, Genre: <%= b.genre %> </div>
+<% end %>
+
+<!-- <p>Find me in app/views/books/index.html.erb</p> -->
